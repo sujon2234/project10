@@ -1,0 +1,56 @@
+
+@media only screen and (min-width:320px) and (max-width:425px){
+    
+
+    .topHeader{}  
+    .leftArea{}  
+    .leftArea nav{}  
+    .leftArea ul{
+    display: table;
+    margin: auto;
+    }  
+    .leftArea ul li{
+    text-align: center;
+    border-right: none;
+    }  
+    .leftArea ul li a{}  
+    .rightArea{
+    display: none;
+    }  
+    .rightArea nav{}  
+    .rightArea nav ul{}  
+    .rightArea nav ul li{}  
+    .rightArea nav ul li a{}  
+
+
+
+
+    /* header top end here*/
+    /* header bottom start here*/
+    .headerBottom{}
+    .logo{}
+    .logo img{}
+    .menu{}
+    .menu nav{}
+    .menu nav ul{}
+    .menu nav ul li{}
+    .menu nav ul li a{}
+    .menu nav ul li a:hover{}
+
+    /* header bottom end here*/
+    /* service area start here */
+    .Services{}
+    .contaneir{
+ 
+    }
+    .title{
+   
+    }
+    .title h2{
+  
+    }
+    .sirviceCard{}
+    .sirviceOne{}
+    .sirviceOne i{}
+   
+}

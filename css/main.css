@@ -1,0 +1,1157 @@
+/*! HTML5 Boilerplate v8.0.0 | MIT License | https://html5boilerplate.com/ */
+
+/* main.css 2.1.0 | MIT License | https://github.com/h5bp/main.css#readme */
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Vendor-prefixed and regular ::selection selectors cannot be combined:
+ * https://stackoverflow.com/a/16982510/7133471
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+  resize: vertical;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden,
+[hidden] {
+  display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ *
+ * 1. For long content, line feeds are not interpreted as spaces and small width
+ *    causes content to wrap 1 word per line:
+ *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ */
+
+.sr-only {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  /* 1 */
+}
+
+/*
+ * Extends the .sr-only class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.sr-only.focusable:active,
+.sr-only.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  white-space: inherit;
+  width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+  visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix::before,
+.clearfix::after {
+  content: " ";
+  display: table;
+}
+
+.clearfix::after {
+  clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+  /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+  (-webkit-min-device-pixel-ratio: 1.25),
+  (min-resolution: 1.25dppx),
+  (min-resolution: 120dpi) {
+  /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   https://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+@media print {
+  *,
+  *::before,
+  *::after {
+    background: #fff !important;
+    color: #000 !important;
+    /* Black prints faster */
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  a[href]::after {
+    content: " (" attr(href) ")";
+  }
+  abbr[title]::after {
+    content: " (" attr(title) ")";
+  }
+  /*
+   * Don't show links that are fragment identifiers,
+   * or use the `javascript:` pseudo protocol
+   */
+  a[href^="#"]::after,
+  a[href^="javascript:"]::after {
+    content: "";
+  }
+  pre {
+    white-space: pre-wrap !important;
+  }
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+  /*
+   * Printing Tables:
+   * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
+   */
+  thead {
+    display: table-header-group;
+  }
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
+/* header top start here*/
+body{
+  font-family: 'Roboto', sans-serif;
+}
+.topheader{
+  background: #F9F9F9;
+  display: inline-flex;
+  width: 100%;
+}
+.contaner{
+  width: 90%;
+  margin: auto;
+  display: inline-flex;
+} 
+.leftArea{
+  width:50%;
+}   
+.leftArea ul {
+  margin: 0;
+  list-style: none;
+}
+.leftArea ul li{
+  display: inline-block;
+    padding: 0 10px;
+    line-height: 33px;
+    border-right: 1px solid #eee;
+    font-size: 12px;
+    font-family: Roboto;
+    font-weight: 400;
+} 
+.leftArea ul li i{
+  font-size: 19px;
+    color: #100e0e6b;
+    margin-right: 11px;
+}  
+.rightArea{
+  width: 50%;
+  text-align-last: right;
+}   
+.rightArea nav ul{
+  margin: 0;
+  list-style: none;
+}  
+.rightArea nav ul li{
+  display: inline-block;
+    line-height: 33px;
+    border-right: 1px solid #eee;
+    padding: 1px 10px;
+    font-family: Roboto;
+    font-weight: 400;
+}  
+.rightArea nav ul li a{
+  font-size: 17px !important;
+  color: #ababab;
+  line-height: 33px;
+} 
+.rightArea nav ul li a:hover{
+  color: #00C0E1;
+} 
+/* header top end here*/
+/* header bottom start here*/
+.headerbottom{
+  width: 100%;
+  display: inline-flex;
+}
+.logo{
+  width: 40%;
+  margin-top: 30px;
+}
+.logo img{
+  margin-left: 45px;
+}
+.menu{
+  margin-top: 12px;
+  width: 60%;
+}
+.menu nav{
+  text-align: right;
+  margin-right: 66px;
+}
+.menu nav ul{
+  padding: 0;
+  margin: 0;
+}
+.menu nav ul li{
+  display: inline-flex;
+}
+.menu nav ul li a{
+  padding: 37px 25px;
+  color: #666;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 14px;
+  font-family: Roboto;
+}
+.menu nav ul li a:hover{
+  color: #00C0E1;
+}
+/* header bottom end here*/
+.banner{
+  background-color: rgba(0, 0, 0, 0);
+  background-repeat: no-repeat;
+  background-image: url(../img/fon3.jpg);
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  display: inline-flex;
+}
+.man{
+  width: 50%;
+    margin-top: 30px;
+}
+.man img{
+  width: 330px;
+    height: auto;
+    margin-left: 169px;
+    margin-top: 20px;
+}
+.content{
+  width: 50%;
+   margin-top: 45px;
+}
+.content h2{
+    font-size: 47px;
+    line-height: 50px;
+    font-weight: 400;
+    font-family: Roboto;
+    color: #fff;
+    border-width: 0px;
+    text-shadow: 1px 1px 2px rgb(0 0 0 / 15%);
+}
+.content p{
+  font-size: 17px;
+    line-height: 32px;
+    font-weight: 400;
+    font-family: Roboto;
+    color: #fff;
+    text-shadow: 1px 1px 2px rgb(0 0 0 / 15%);
+}
+.content a{
+  color: #fff;
+  display: block;
+  background: rgba(255,255,255,0.15);
+  padding: 10px 15px;
+  text-decoration: none;
+  width: 16%;
+  text-align: center;
+  border: 1px solid #fff;
+  margin-top: 63px;
+}
+.content a:hover{
+  background: #40A4B1;
+}
+/* service area start here */
+.contaneir{
+  width: 90%;
+  margin: auto;
+}
+.title{
+    width: 100%;
+}
+.title h2{
+  border-bottom: 1px solid #eee;
+    text-align: center;
+    font-size: 25px;
+    font-family: Roboto;
+    font-weight: 500;
+    color: #666;
+    padding-bottom: 15px;
+    width: 200px;
+    margin: auto;
+    padding-top: 30px;
+}
+.sirviceCard{ 
+  margin-top: 50px;
+  padding: 50px 0;
+  display: inline-flex; 
+}
+.sirviceOne {
+  width: 24%;
+  margin-left: 5px;
+  text-align: center;
+}
+.sirviceOne i{
+  font-size: 46px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    color: #00C0E1;
+    line-height: 100px;
+    border: 1px solid rgba(105, 113, 119, 0.1);
+    margin: auto;
+}
+.sirviceOne i:hover{ 
+  background: #00C0E1;
+  color: #fff;
+  
+}
+.sirviceOne h3{
+    margin: 0;
+    font-size: 19px;
+    font-family: roboto;
+    line-height: 70px;
+    font-weight: 500;
+}
+.sirviceOne p {
+    margin: 0;
+    font-family: roboto;
+    font-weight: 400;
+    font-size: 14px;  
+}
+/* Recent-Works start here */
+.Recent-Works{
+  margin-top: 50px;
+}
+.workeWrite{
+     padding: 0 126px;
+    text-align: center;
+    margin-top: 15px;
+    font-family: roboto;
+    font-weight: 500;
+    line-height: 1.5;
+    font-size: 15px;
+    margin-bottom: 35px;
+    color: #555;
+}
+.acheivmnts{
+  display: inline-flex;
+  width: 100%;
+}
+.img1{
+  width: 32%;
+  margin-top: 20px;
+  margin-right: 20px;
+}
+.img1 img{
+  width: 100%;
+  height: 269px;
+}
+.img1 img:hover{
+  background: #8ABFB9;
+}
+.mainljk{
+  display: inline-flex;
+  width: 100%;
+}
+.battonn{
+  width: 100%;
+    margin-top: 53px;
+    margin-bottom: 40px;
+}
+.loadfor {
+  color: #7E7B7B;
+  display: block;
+  font-size: 15px;
+  padding: 10px 15px;
+  text-decoration: none;
+  width: 13%;
+  text-align: center;
+  border: 1px solid #DEDEDE;
+ margin: auto;
+}
+.loadfor:hover{
+  background: #F7F7F7;
+}
+/* <!-- temmembrr sectiion tart here --> */
+.temmember{
+  background-color: rgba(105, 113, 119, 0.45);
+  padding: 50px 0;
+}
+.qota {
+  width: 100%;
+  text-align: center;
+  padding-top: 31px;
+}
+.qota i{
+  font-size: 43px;
+    color: #fff;
+}
+.text p{
+    font-size: 19px;
+    color: #fff;
+    margin-bottom: 25px;
+    padding: 0 261px;
+    margin-top: 25px;
+    line-height: 1.6;
+    text-align: center;
+}
+.text h3{
+  text-align: center;
+    font-family: raleway;
+    font-size: 14px;
+    color: #eee;
+}
+/* ------  about----- */
+.middel{
+  width: 80%;
+  margin: auto;
+}
+.aboutone{
+  display: inline-flex;
+  width: 100%;
+  padding: 40px 0;
+}
+.cont{
+  width: 50%;
+  margin-top: 45px;
+}
+.head {
+  border-bottom: 1px solid #eee;
+  text-align: center;
+  font-size: 25px;
+  font-family: Roboto;
+  font-weight: 500;
+  color: #666;
+  padding-bottom: 15px;
+  width: 200px;
+  margin: auto;
+}
+.cont p{
+  color: #666;
+    font-size: 17px;
+    font-family: roboto;
+    font-weight: 400;
+    margin-top: 70px;
+}
+.litter{
+    font-size: 21px;
+    color: #fff;
+    border-radius: 2px;
+    float: left;
+    background: #00C0E1;
+    padding: 5px 10px;
+    margin-top: 3px;
+    margin-right: 10px;
+}
+.link{
+  margin-top: 20px;
+}
+.link ul{
+  padding: 0;
+  list-style: none;
+}
+.link ul li{
+    font-family: roboto;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 2;
+}
+.link ul li i{
+  color: #00C0E1;
+    font-size: 16px;
+    padding-right: 5px;
+}
+.imagg{
+  width: 50%;
+  margin-top: 45px;
+}
+.bloog{
+  display: inline-flex;
+  margin-top: 75px;
+}
+.oneblog{
+  width: 45%;
+  margin-left: 31px;
+}
+.oneblog img{
+  width: 100%;
+}
+.oneblog ul{
+  margin-top: 10px;
+  padding: 0;
+  list-style: none;
+}
+.oneblog ul li i{
+    font-size: 33px;
+    color: #00C0E1;
+    border-right: 1px solid #f1f1f1;
+    padding-right: 10px;
+}
+.oneblog ul li a{
+    font-family: raleway;
+    font-size: 16px;
+    color: #565656;
+    font-weight: 300;
+    text-decoration: none;
+    margin-left: 16px;
+}
+.oneblog ul li a:hover{
+  color: #00C0E1;
+}
+.date{
+    margin-left: 10px;
+    margin-top: 5px;
+    color: #aaa;
+    font-size: 11px;
+    font-family: roboto; 
+}
+.date a{
+  color: #aaa;
+    font-size: 11px;
+    font-family: roboto;
+    font-weight: 300;
+    text-decoration: none;
+}
+.date a:hover{
+  text-decoration: underline;
+}
+/* ------client---- */
+.clint nav{
+  margin-top: 28px; 
+}
+.clint nav ul{
+  margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.clint nav ul li{
+  display: inline;
+  width: 190px;
+}
+.clint nav ul li a img{
+  margin-left: 16px;
+}
+/* twitter area start here */
+.twier{
+  background: url(../img/twitter.jpg) 50% 50% no-repeat fixed;
+  min-height: 70px;
+  height: 100%;
+  padding: 30px 0;
+}
+.middelll{
+  display: inline-flex;
+  width: 100%;
+}
+.twittwrit {
+  width: 70%;
+  margin-left: 78px;
+}
+.twittwrit ul{
+  padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.twittwrit ul li{
+    color: #fff;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    font-size: 14px;
+    line-height: 70px;
+}
+.twittwrit ul li a{
+  color: #fff;
+}
+.twitt{
+  width: 15%;
+}
+.twitt i{
+  line-height: 70px;
+    font-size: 40px;
+    color: #fff;
+    text-align: right;
+    display: block;
+}
+/* ------ fotter contact start here----- */
+.aboutone{
+  display: inline-flex;
+  width: 100%;
+  padding: 40px 0;
+}
+.contact-fotter{
+  width: 36%;
+  padding: 0 10px;
+}
+.headd {
+  font-size: 19px;
+    font-family: roboto;
+    color: #777;
+    padding: 0 10px;
+}
+.cont p{
+  color: #666;
+    font-size: 17px;
+    font-family: roboto;
+    font-weight: 400;
+    margin-top: 70px;
+}
+.litter{
+    font-size: 21px;
+    color: #fff;
+    border-radius: 2px;
+    float: left;
+    background: #00C0E1;
+    padding: 5px 10px;
+    margin-top: 3px;
+    margin-right: 10px;
+}
+.linkk{
+  margin-top: 20px;
+}
+.linkk ul{
+  padding: 0;
+  list-style: none;
+}
+.linkk ul li{
+  line-height: 25px;
+  font-size: 13px;
+  font-family: Roboto;
+}
+.linkk ul li i{
+    color: #818181;
+    font-size: 14px;
+    padding-right: 5px;
+}
+.oneblog img{
+  width: 100%;
+}
+.oneblog ul{
+  margin-top: 10px;
+  padding: 0;
+  list-style: none;
+}
+.oneblog ul li i{
+    font-size: 33px;
+    color: #00C0E1;
+    border-right: 1px solid #f1f1f1;
+    padding-right: 10px;
+}
+.oneblog ul li a{
+    font-family: raleway;
+    font-size: 16px;
+    color: #565656;
+    text-decoration: none;
+    margin-left: 16px;
+}
+.oneblog ul li a:hover{
+  color: #00C0E1;
+}
+.date{
+    margin-left: 10px;
+    margin-top: 5px;
+    color: #aaa;
+    font-size: 11px;
+    font-family: roboto;
+}
+.date a{
+  color: #aaa;
+    font-size: 11px;
+    font-family: roboto;
+    text-decoration: none;
+}
+.date a:hover{
+  text-decoration: underline;
+} 
+.AreaFotter nav ul{
+  margin: 0;
+  list-style: none;
+}  
+.AreaFotter nav ul li{
+    display: inline-flex;
+}
+.AreaFotter nav ul li i{
+  color: #fff;
+  padding: 3px;
+  background: rgba(50,50,50,0.2);
+  border-radius: 4px;
+  margin-right: 5px;
+}  
+.AreaFotter nav ul li i:hover{
+  background:#959595;
+  transition: .5s;
+} 
+.popular{
+  width: 42%;
+}
+.popularTag{
+  display: inline-flex;
+  padding: 0 10px;
+}
+.popularTag ul{
+  padding: 0;
+}
+.popularTag ul li{
+  display: inline-flex;
+}
+.popularTag ul li a{
+   color: #666;
+    background: rgba(50,50,50,0.1);
+    display: block;
+    text-decoration: none;
+    font-size: 13px;
+    line-height: 1;
+    margin-bottom: 8px;
+    margin-right: 8px;
+    padding: 6px 10px;
+    font-family: Roboto;
+    border-radius: 2px;
+}
+.popularTag ul li a:hover{
+  background: #D1D1D1;
+}
+.phots{
+  width: 20%;
+}
+.topheader{
+  background: #F9F9F9;
+  display: inline-flex;
+  width: 100%;
+}
+.contaner{
+  width: 90%;
+  margin: auto;
+  display: inline-flex;
+} 
+.copyright{
+  display: inline-flex;
+  width: 100%;
+} 
+.leftArea{
+  width:50%;
+} 
+.leftArea p{
+   line-height: 35px;
+    font-family: roboto;
+    font-size: 12px;
+    color: #777;
+} 
+.leftArea a{
+  text-decoration: none;
+  color: #777;
+} 
+.leftArea a:hover{
+  text-decoration: underline;
+}
+.rightArea{
+  width: 50%;
+  text-align-last: right;
+}   
+.rightArea nav ul{
+  margin: 0;
+  list-style: none;
+}  
+.rightArea nav ul li{
+  display: inline-block;
+    line-height: 33px;
+    border-right: 1px solid #eee;
+    padding: 1px 10px;
+    font-family: Roboto;
+    font-weight: 400;
+}  
+.rightArea nav ul li a{
+  font-family: roboto;
+    font-size: 12px;
+    color: #777;
+    text-decoration: none;
+} 
+.rightArea nav ul li a:hover{
+  text-decoration: underline;
+} 
+/* header top end here*/
+/* responsiv design  */
+
+@media only screen and (min-width:320px) and (max-width:768px){ 
+  .leftArea{
+    width: 100%;
+  }  
+  .contaner {
+   margin: 0;
+    display: inline-block;
+    width: 100%;
+  } 
+  .leftArea ul li{
+  text-align: center;
+  border-right: none;
+  } 
+  .rightArea{
+  display: none;
+  }  
+  /* header top end here*/
+  /* header bottom start here*/
+  .logo {
+    margin-bottom: 20px;
+    margin-left: 0px;
+  }
+  .menu{
+    display: none;
+  }
+  /* header bottom end here*/
+  /* banner  */
+.man {
+  width: 33%;
+}
+.head{
+  width: 95%;
+    text-align: center;
+    margin: auto;
+    padding: 0px 10px;
+}
+.content {
+  width: 67%;
+ margin-top: 0;
+}
+.content h2 {
+  font-size: 20px;
+  line-height: 28px;
+  margin-bottom: 0;
+  margin-top: 5px;
+}
+.content p {
+  font-size: 6px;
+  line-height: 11px;
+  margin: 0;
+}
+.content a {
+  width: 51%;
+  margin-top: 26px;
+  font-size: 14px;
+}
+.man img {
+  width: 85px;
+   margin-left: 0px;
+  margin-top: 0px;
+}
+  /* service area start here */
+  .Services{}
+  .contaneir{
+    margin: 0;
+    width: 100%;
+  }
+  .workeWrite{
+     padding: 0 10px;
+}
+  .sirviceCard{
+    display:inline-block;
+    margin-top: 0;
+  }
+  .sirviceOne{
+    width: 100%;
+    margin-top: 30px;
+    margin-left: 0;
+  }
+  .acheivmnts {
+    display: inline-block;
+    width: 95%;
+    padding: 10px;
+    }
+    .Recent-Works {
+    margin-top: 0px;
+    }
+    .img1 {
+      width: 100%;
+      margin-top: 5px;
+      margin-right: 0px;
+  }
+  .loadfor{
+    width: 40%;
+  }
+.text p{
+  padding: 0;
+  }
+/*--------- about ----- */
+.about {
+  width: 100%;
+}
+.middel {
+  width: 95%;
+  padding: 10px;
+  margin: 0
+}
+.aboutone {
+  display: inline-block;
+}
+.cont {
+  width: 100%;
+  margin-top: 45px;
+}
+.cont p {
+  margin-top: 40px;
+  padding: 3px;
+  text-align: justify;
+}
+.imagg {
+  width: 100%;
+  margin-top: 45px;
+}
+.bloog {
+  display: inline-block;
+  margin-top: 75px;
+  width: 100%;
+}
+.oneblog {
+  width: 100%;
+  margin-left:0;
+}
+.clint nav {
+  width: 100%;
+  margin: auto;
+  text-align: center;
+}
+.clint nav ul li {
+  display: inline-block;
+  width: 100%;
+}
+.clint nav ul li a img {
+  margin-left: 0px;
+}
+.middelll {
+  display: inline-block;
+}
+.twitt {
+  width: 100%;
+  text-align: center;
+}
+.twitt i{
+  text-align: center;
+}
+.twittwrit {
+  width: 100%;
+  margin-left: 0px;
+}
+.twittwrit ul li {
+ margin: 0;
+  padding: 11px;
+  width: 92%;
+  line-height: 23px;
+  text-align: center;
+}
+.contact-fotter {
+  width: 93%;
+  padding: 0 10px;
+  margin: 0;
+}
+.headd {
+  width: 95%;
+  text-align: center;
+  margin: auto;
+}
+.linkk {
+  margin-top: 20px;
+  text-align: center;
+}
+.popular {
+  width: 100%;
+  margin: 0;
+}
+.popularTag ul {
+  padding: 0;
+  text-align: center;
+}
+.phots {
+  width: 100%;
+}
+.leftArea p {
+  text-align: center;
+}
+.leftArea nav {
+  text-align: center;
+  padding: 0;
+}
+}
+@media only screen and (min-width:769px) and (max-width: 1024px){ 
+
+  .leftArea ul {
+    padding: 0;
+}
+  .leftArea ul li {
+    font-size: 10px;
+}
+.logo {
+  width: 24%;
+}
+.menu {
+  width: 76%;
+}
+.menu nav {
+  margin-right: 0px;
+}
+.man img {
+  margin-left: 107px;
+}
+.content a {
+  width: 20%;
+}
+.loadfor {
+  width: 14%;
+}
+.clint nav ul li a img {
+  width: 117px;
+  padding-bottom: 27px;
+}
+.text p {
+   padding: 0px 0px;
+}
+.twittwrit ul li {
+  font-size: 13px;
+  line-height: 61px;
+}
+}
+  
